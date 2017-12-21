@@ -1,0 +1,24 @@
+# spring datasource
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@172.16.230.90:1521:stupor
+#    driver-class-name: net.sf.log4jdbc.DriverSpy
+#    url: jdbc:log4jdbc:oracle:thin:@172.16.230.90:1521:stupor
+    username: xd_zx
+    password: 123456
+    max-active: 30
+    max-wait: 60000
+    initial-size: 4
+    max-idle: 30
+    min-idle: 5
+# JPA (JpaBaseConfiguration, HibernateJpaAutoConfiguration)
+  data:
+    jpa:
+      repositories:
+        enabled: true
+  jpa:
+    generate-ddl: false
+    hibernate.ddl-auto: update
+    open-in-view: true
+    show-sql: true
