@@ -19,6 +19,7 @@
 		<credit.version>0.0.1-SNAPSHOT</credit.version>
 	</properties>
 	<modules>
+		<module>../credit-core</module>
 		<module>../credit-domain</module>
 		<module>../credit-dao</module>
 		<module>../credit-service</module>
